@@ -1,3 +1,5 @@
+var WebSocketServer = require("ws").Server
+
 var app = require('express')();
 
 var http = require('http').Server(app);
@@ -7,6 +9,13 @@ var port = process.env.PORT || 5000
 
 var server = http.createServer(app)
 server.listen(port)
+
+var wss = new WebSocketServer({server: server})
+
+wss.on("connection", function(ws) {
+  var id = setInterval(function() {
+    ws.send(JSON.stringify(new Date()), function() {  })
+  }, 1000)
 
 app.get('/', function(req, res){
   res.sendfile('index.html');
