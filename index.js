@@ -3,6 +3,11 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
+var port = process.env.PORT || 5000
+
+var server = http.createServer(app)
+server.listen(port)
+
 app.get('/', function(req, res){
   res.sendfile('index.html');
 });
@@ -33,6 +38,7 @@ io.on('connection', function(socket){
 
 
 http.listen(98.222.208.90, function(){
+  console.log('listening on *:3000');
 });
 
 
