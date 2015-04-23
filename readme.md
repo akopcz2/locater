@@ -5,7 +5,7 @@ Locater is an app that reads your location in the browser using GeoLocation tech
 
 To get started Install 
   * Node --> npm install node
-  * Sockets.io --> npm install sockets
+  * Socket.io --> npm install socket.io
   * Create a <a href="https://www.twilio.com/try-twilio">Twilio</a> Account 
 
   * Twilio To Send and Receive Messages
