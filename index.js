@@ -18,7 +18,7 @@ io.on('connection', function(socket){
 	var utils = require( "twilio" );
 
 	var accountSid = 'AC1bf28c36aa8c023293404d30e6688e9d';
-	var authToken = '6504c476b329fde29cbcb16bf9f54b03';
+	var authToken = 'YOUR AUTH TOKEN';
 	var client = require('twilio')(accountSid, authToken);
 	 
 	client.messages.create({
@@ -38,7 +38,7 @@ io.on('connection', function(socket){
 	var utils = require( "twilio" );
 
 	var accountSid = 'AC1bf28c36aa8c023293404d30e6688e9d';
-	var authToken = '6504c476b329fde29cbcb16bf9f54b03';
+	var authToken = 'YOUR AUTH TOKEN';
 	var client = require('twilio')(accountSid, authToken);
 	 
 	client.messages.create({
