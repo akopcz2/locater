@@ -23,8 +23,8 @@ io.on('connection', function(socket){
 	 
 	client.messages.create({
 	    body: "I am HOME!",
-	    to: "+17738164129", 
-	    from: "+17088882048",
+	    to: "Send To Number ", 
+	    from: "Twilio Number",
 	}, function(err, message) {
 	    process.stdout.write(message.sid);
 	});
@@ -43,8 +43,8 @@ io.on('connection', function(socket){
 	 
 	client.messages.create({
 	    body: "I am cheating on you!",
-	    to: "+17738164129", 
-	    from: "+17088882048",
+	    to: "Send To Number ", 
+	    from: "Twilio Number",
 	}, function(err, message) {
 	    process.stdout.write(message.sid);
 	});

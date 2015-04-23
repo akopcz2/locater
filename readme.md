@@ -17,6 +17,17 @@ To get started Install
 ```
 
   * Sockets to send messages to server based on location
+  	Replace Send to Number with your desired number
+  	Replace Twilion Number with your Twilio assigned number
+```javascript
+	client.messages.create({
+	    body: "I am cheating on you!",
+	    to: "Send To Number ", 
+	    from: "Twilio Number",
+	}, function(err, message) {
+	    process.stdout.write(message.sid);
+	});
+```
   * Node server
 
 App Is Currently in Early Devlopment
