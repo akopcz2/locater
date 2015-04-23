@@ -1,7 +1,7 @@
 Locater App
 ============
 
-Locater is an app that reads your location in the browser using GeoLocation technology and the Twilio API
+Locater is an app that reads your location in the browser using GeoLocation technology and usesthe Twilio API to send text messages.
 
 To get started Install 
   * Node --> npm install node
