@@ -39,11 +39,14 @@ function initialize() {
       var pos = new google.maps.LatLng(position.coords.latitude,
                                        position.coords.longitude);
         console.log(pos);
-        if (pos !== -87.82987930000002, 41.942035499999996){
-          console.log('You are Home');
+        if (pos == -17.82987930000002, 11.942035499999996){
+            console.log('You are Home');
             socket.emit('chat message');
             return false;
-
+            console.log(pos);
+        } else {
+            socket.emit('away message');
+            console.log(pos);
         }
 
       var infowindow = new google.maps.InfoWindow({
